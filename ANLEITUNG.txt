@@ -1,0 +1,12 @@
+KANUSLALOM TIMER – FIREBASE VERSION
+
+1. Firebase Console > Authentication > Sign-in method: Anonym aktivieren.
+2. Realtime Database > Regeln: Inhalt von firebase.rules.json einfügen und veröffentlichen.
+3. Alle Dateien aus diesem Ordner in die Wurzel des GitHub-Pages-Repositories hochladen.
+4. Die App öffnen, Trainingseinheit erstellen, Code am zweiten Gerät eingeben.
+
+WICHTIG: Die beigelegten Regeln sind nur für einen begrenzten, vertrauenswürdigen Pilotbetrieb geeignet. Jeder anonym angemeldete Nutzer, der einen sechsstelligen Code kennt oder errät, kann auf den Raum zugreifen. Kein produktionssicheres Rechte- oder Ratenlimit. Für öffentlich dauerhaften Einsatz ist ein Backend mit Rate-Limiting, Raum-Mitgliedschaft und längeren geheimen Einladungs-Token nötig.
+
+Die Uhr nutzt einen vom Firebase-Server geschätzten Zeitversatz. Netzwerkverzögerungen und Uhrabweichungen machen diese Lösung nicht zu einer offiziellen Wettkampfzeitmessung.
+
+Die Raumdaten werden zentral gespeichert; Zurücksetzen betrifft alle Teilnehmer. Alte Räume werden nicht automatisch gelöscht.
